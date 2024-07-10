@@ -1,8 +1,8 @@
+import os
+from joblib import load
 import streamlit as st
 import pandas as pd
-from joblib import load
 from datetime import datetime
-import os
 
 # Load the trained model using a relative path
 def load_model(model_path):
@@ -61,3 +61,4 @@ if st.button('Predict Result'):
         
         # Display the prediction
         st.write(f'The prediction for {team} against {opponent} is: {result}')
+
