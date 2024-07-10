@@ -6,7 +6,7 @@ import os
 
 # Load the trained model using a relative path
 def load_model(model_path):
-    return joblib.load(model_path)
+    return load(model_path)
 
 model_path = os.path.join(os.path.dirname(__file__), 'trained_model.joblib')
 model = load_model(model_path)
