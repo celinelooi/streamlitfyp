@@ -61,4 +61,3 @@ if st.button('Predict Result'):
         
         # Display the prediction
         st.write(f'The prediction for {team} against {opponent} is: {result}')
-
