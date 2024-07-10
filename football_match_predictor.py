@@ -5,9 +5,13 @@ from datetime import datetime
 import os
 
 # Load the trained model using a relative path
-model_path = os.path.join(os.path.dirname(__file__), 'trained_model.joblib')
-model = load(model_path)
+def load_model(model_path):
+    return joblib.load(model_path)
 
+model_path = os.path.join(os.path.dirname(__file__), 'trained_model.joblib')
+model = load_model(model_path)
+
+st.write("Model loaded successfully")
 # Title and description
 st.title('Football Match Predictor')
 st.write('Enter the details of the match to predict the outcome.')
