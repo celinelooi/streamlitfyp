@@ -18,7 +18,7 @@ pillow==10.4.0
 protobuf==3.20.3
 pydeck==0.9.1
 requests==2.32.3
-scikit-learn==1.2.0
+scikit-learn==1.2.2
 scipy==1.10.1
 six==1.16.0
 smmap==5.0.1
